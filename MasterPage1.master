@@ -1,0 +1,47 @@
+<%@ Master Language="C#" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Tour2Visitors</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+    <style type="text/css">
+        .auto-style1 {
+            margin-top: 4px;
+        }
+    </style>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body id="top">
+<div class="wrapper col1">
+  <div id="header">
+    <br class="clear" />
+    <div id="logo" class="auto-style1">
+      <h1><a href="#" style="font-family: 'Gill Sans MT'">Tour2Visitors</a></h1>
+    </div>
+  </div>
+</div>
+<div id="homecontent">
+    <div class="wrapper">
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            <p>
+                &nbsp;<br />
+            </p>
+
+        </asp:ContentPlaceHolder>
+        <br class="clear" />
+        <br />
+    </div>
+</div>
+<div class="wrapper col7">
+  <div id="copyright">
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <br class="clear" />
+  </div>
+</div>
+</body>
+</html>
