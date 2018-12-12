@@ -1,0 +1,41 @@
+<a href="#" class="btn btn-primary btn-lg">CONTÁCTANOS</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		 <div id="fh5co-contact" class="fh5co-section-gray">
+			<div class="container">
+				<form action="#">
+					<div class="row animate-box">
+						<div class="col-md-6">
+							<h3 class="section-title">Nuestra Dirección</h3>
+							<p>Aquí puedes ponerte en contácto con nosotros para lo que necesites, tanto por teléfono, postal o correo electrónico.</p>
+							<ul class="contact-info">
+								<li><i class="icon-location-pin"></i>Carretera Alcalá-Meco, s/n28805 Alcalá de Henares, Madrid, España</li>
+								<li><i class="icon-phone2"></i>+ 34 91 885 69 71</li>
+								<li><i class="icon-mail"></i><a href="#">Tour2Visitors@gmail.com</a></li>
+								<li><i class="icon-globe2"></i><a href="#">www.tour2visitors.com</a></li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Nombre">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Email">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Mensaje"></textarea>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<input type="submit" value="Enviar Mensaje" class="btn btn-primary">
+									</div>
