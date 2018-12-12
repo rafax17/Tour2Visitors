@@ -1,0 +1,57 @@
+namespace 
+{
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Entity.Spatial;
+
+    [Table("Usuario")]
+    public partial class Usuario
+    {
+        [Key]
+        [Column(Order = 0)]
+        [StringLength(50)]
+        public string nombre { get; set; }
+
+        [Key]
+        [Column(Order = 1)]
+        public string apellidos { get; set; }
+
+        [Key]
+        [Column(Order = 2)]
+        [StringLength(50)]
+        public string contraseña { get; set; }
+
+        [Key]
+        [Column("usuario", Order = 3)]
+        [StringLength(50)]
+        public string usuario1 { get; set; }
+
+        [Key]
+        [Column(Order = 4)]
+        [StringLength(50)]
+        public string telefono { get; set; }
+
+        [Key]
+        [Column(Order = 5)]
+        public string correo { get; set; }
+
+        public string descripcion { get; set; }
+
+        [Key]
+        [Column(Order = 6)]
+        [StringLength(10)]
+        public string tipoUsuario { get; set; }
+
+        [Key]
+        [Column(Order = 7)]
+        [StringLength(10)]
+        public string estadoConfEmail { get; set; }
+
+        [Key]
+        [Column(Order = 8)]
+        [StringLength(10)]
+        public string codigoActivacion { get; set; }
+    }
+}
