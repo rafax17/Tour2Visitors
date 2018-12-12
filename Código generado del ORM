@@ -1,0 +1,46 @@
+namespace 
+{
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Entity.Spatial;
+
+    public partial class Tours
+    {
+        [Key]
+        [Column(Order = 0)]
+        public int ID { get; set; }
+
+        [Key]
+        [Column(Order = 1)]
+        public string titulo { get; set; }
+
+        [Key]
+        [Column(Order = 2)]
+        [StringLength(50)]
+        public string nombreGuia { get; set; }
+
+        [Key]
+        [Column(Order = 3)]
+        public string descripcionTour { get; set; }
+
+        [Key]
+        [Column(Order = 4)]
+        public string puntoEncuentro { get; set; }
+
+        [Key]
+        [Column(Order = 5)]
+        [StringLength(50)]
+        public string idioma { get; set; }
+
+        [Key]
+        [Column(Order = 6)]
+        [StringLength(10)]
+        public string horario { get; set; }
+
+        [Key]
+        [Column(Order = 7, TypeName = "image")]
+        public byte[] imagen { get; set; }
+    }
+}
