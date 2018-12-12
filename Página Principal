@@ -1,0 +1,315 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaPrincipal.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    
+    <div id="fh5co-feature-product" class="fh5co-section-gray">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+						<h3> ¡Viaja y disfruta de los mejores Tours gratuitos!</h3>
+						<p>Encuentra los mejores guías turísticos para un recorrido inolvidable</p>
+					</div>
+				</div>
+
+				<div class="row row-bottom-padded-md">
+					<div class="col-md-12 text-center animate-box">
+						<p>
+                            <img alt="" src="images/multiciudad.jpg" style="width: 1024px; height: 576px" />&nbsp;</p>
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<a href="https://vimeo.com/channels/staffpicks/93951774" class="link-watch popup-vimeo btn btn-primary"><i class="icon-play3"></i> Mira nuestro video</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+				
+		
+		<div id="fh5co-portfolio" class="fh5co-section-gray">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+						<h3>Ciudades destacadas</h3>
+						<p>Aquí encontrarás las ciudades con los tours más recientes</p>
+					</div>
+				</div>
+
+				
+				<div class="row row-bottom-padded-md">
+					<div class="col-md-12">
+						<ul id="fh5co-portfolio-list">
+
+							<li class="two-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/madrid.jpg); ">
+								<a href="#" class="color-3">
+									<div class="case-studies-summary">
+										<span>Madrid</span>
+										<h2>Conoce los lugares más emblemáticos de la capital de España</h2>
+									</div>
+								</a>
+							</li>
+						
+							<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/sevilla.jpg); ">
+								<a href="#" class="color-4">
+									<div class="case-studies-summary">
+										<span>Sevilla</span>
+										<h2>Cultura y arte en una de las ciudades más bonitas del mundo</h2>
+									</div>
+								</a>
+							</li>
+
+							<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/segovia.jpg); "> 
+								<a href="#" class="color-5">
+									<div class="case-studies-summary">
+										<span>Segovia</span>
+										<h2>Un tour mágico por las calles de esta antigua ciudad Romana</h2>
+									</div>
+								</a>
+							</li>
+							<li class="two-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/santiago.jpg); ">
+								<a href="#" class="color-6">
+									<div class="case-studies-summary">
+										<span>Santiago de Compostela</span>
+										<h2>Ven a visitar la ciudad del Peregrino con un tour muy especial</h2>
+									</div>
+								</a>
+							</li>
+						</ul>		
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4 text-center animate-box">
+						<a href="#"><span class="media-middle" style="font-size: 18px; color: #FFFFFF; text-transform: uppercase; letter-spacing: 2px; background-color: #37A000">Ver MÁS</span></a>
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+		
+        <div class = "row walks-container section-home">
+            <div>
+                <h2 class ="title-section">Tours publicados </h2>
+            </div>
+            <div class="row row-equal space-0">
+                <div class="col tour-card">
+                    <div class="cont-content">
+                        <div class ="fluid-thumbnail-grid-image-image-container">
+                             <div class ="fluid-thumbnail-grid-image-image-container-inner">
+                                 <img alt ="Viaje por Alcalá  de Henares- Alcalá de Henares, Madrid" class= "fluid-thumbnail-grid-image-image"
+                                     src ="https://www.esmadrid.com/sites/default/files/styles/content_type_full/public/widgets/items/images/alcalaHenares_1400576192.417.jpg?itok=WeRl-ysl"
+                                     data-original="https://www.esmadrid.com/sites/default/files/styles/content_type_full/public/widgets/items/images/alcalaHenares_1400576192.417.jpg?itok=WeRl-ysl"
+                                     style = "background-image:url("https://www.esmadrid.com/sites/default/files/styles/content_type_full/public/widgets/items/images/alcalaHenares_1400576192.417.jpg?itok=WeRl-ysl");" />
+
+                             </div>
+
+                        </div>
+                        <div class ="home-fluid-thumbnail-grid-listing-description">
+                            <h3 class ="home-fluid-thumbnail-grid-listing-description-title">VIAJE POR ALCALÁ DE HENARES-
+                                ALCALÁ DE HENARES, MADRID </h3>
+                        </div>
+                    </div>
+                </div>
+                a
+
+        </div>
+		
+		<div class="fh5co-content-section">
+			<div class="container">
+				<div class="row row-bottom-padded-md">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+						<h3>Our Team</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="fh5co-team text-center animate-box">
+							<figure>
+								<img src="images/person_1.jpg" alt="user">
+							</figure>
+							<p>Jean Doe, XYZ Co. <br> <span class="text-mute">Designer</span></p>
+							<blockquote>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							</blockquote>
+							
+
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="fh5co-team text-center animate-box">
+							<figure>
+								<img src="images/person_2.jpg" alt="user">
+							</figure>
+							<p>Jean Doe, XYZ Co. <br> <span class="text-mute">Developer</span></p>
+							<blockquote>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							</blockquote>
+							
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="fh5co-team text-center animate-box">
+							<figure>
+								<img src="images/person_3.jpg" alt="user">
+							</figure>
+							<p>Jean Doe, XYZ Co. <br> <span class="text-mute">Photographer</span></p>
+							<blockquote>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							</blockquote>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="fh5co-blog-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box" style="left: 0px; top: -15px">
+						<h3 style="left: -2px; top: -13px">&nbsp;Opiniones&nbsp; de Tours</h3>
+						<p>Aquí encontraras las opiniones de última hora sobre los Tours realizados por nuestros usuarios</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row row-bottom-padded-md">
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<div class="fh5co-blog animate-box">
+							<a href="#"><img class="img-responsive" src="images/alcala.jpg" alt=""></a>
+							<div class="blog-text">
+								<div class="prod-title">
+									<h3 style="color: #007BFF">Recorrido de la mano de Cervantes</h3>
+									<span class="posted_by">Dic. 7th</span>
+									<span class="comment"><a href="">1<i class="icon-bubble2"></i></a></span>
+									<p>Un tour por el centro de Alcalá de Henares muy completo, nuestro guía, Jaime, nos ha enseñado todos los lugares interesantes del casco viejo, desde la Universisad de Alcalá hasta la catedral de los Santos Niños.</p>
+                                    <p>También nos ha recomendado un sitio para comer que disfrutamos mucho y una visita a la casa de Cervantes...</p>
+									<p style="color: #007BFF"><a href="#">Leer </a>Más..</p>
+								</div>
+							</div> 
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6" style="left: 0px; top: 0px">
+						<div class="fh5co-blog animate-box">
+							<a href="#"><img class="img-responsive" src="images/paris1.jpg" alt=""></a>
+							<div class="blog-text">
+								<div class="prod-title">
+									<h3 style="color: #007BFF">Tour por la Ciudad del Amor - Paris</h3>
+									<span class="posted_by">Dic. 11th</span>
+									<span class="comment"><a href="">3<i class="icon-bubble2"></i></a></span>
+									<p>Un verdadero lujo tener a Fabiane como guía durante unas horas por Paris, un Tour muy completo que empezó en los Campos Elíseos y terminó en la Torre Eiffel, fué una ruta con todo lujo de detalle..</p>
+									<p style="color: #007BFF"><a href="#">Leer Más...</a></p>
+								</div>
+							</div> 
+						</div>
+					</div>
+					<div class="clearfix visible-sm-block"></div>
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<div class="fh5co-blog animate-box">
+							<a href="#"><img class="img-responsive" src="images/florencia.jpg" alt=""></a>
+							<div class="blog-text">
+								<div class="prod-title">
+									<h3 style="color: #007BFF">Florencia</h3>
+									<span class="posted_by">Dec. 12th</span>
+									<span class="comment"><a href="">4<i class="icon-bubble2"></i></a></span>
+									<p>La bellissima&nbsp; Firenze que nos presentó nuestra guía Julia ha sido una gran experiencia, disfrutamos mucho de esa bella ciudad, de su cultura y su arquitectura, un Tour a la altura del David de Miguel Angel, perfecto...</p>
+									<p style="color: #007BFF"><a href="#">Leer Más...</a></p>
+								</div>
+							</div> 
+						</div>
+					</div>
+					<div class="clearfix visible-md-block"></div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4 text-center animate-box">
+						<a href="#" class="btn btn-primary btn-lg">CONTÁCTANOS</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		 <div id="fh5co-contact" class="fh5co-section-gray">
+			<div class="container">
+				<form action="#">
+					<div class="row animate-box">
+						<div class="col-md-6">
+							<h3 class="section-title">Nuestra Dirección</h3>
+							<p>Aquí puedes ponerte en contácto con nosotros para lo que necesites, tanto por teléfono, postal o correo electrónico.</p>
+							<ul class="contact-info">
+								<li><i class="icon-location-pin"></i>Carretera Alcalá-Meco, s/n28805 Alcalá de Henares, Madrid, España</li>
+								<li><i class="icon-phone2"></i>+ 34 91 885 69 71</li>
+								<li><i class="icon-mail"></i><a href="#">info@tour2visitors.com</a></li>
+								<li><i class="icon-globe2"></i><a href="#">www.tour2visitors.com</a></li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Nombre">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Email">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Mensaje"></textarea>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<input type="submit" value="Enviar Mensaje" class="btn btn-primary">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+
+		<!-- END fh5co-contact -->
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+
+	<!-- jQuery -->
+
+
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/sticky.js"></script>
+
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Superfish -->
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+
+
+</asp:Content>
