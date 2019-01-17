@@ -1,0 +1,79 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaPrincipal.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    
+   
+		
+		
+
+
+
+		<div class="fh5co-content-section">
+			<div class="container">
+				<div class="row row-bottom-padded-md">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+						<h3>Tú opinión</h3>
+						<p>Aquí puedes dejar tu opinión sobre el tour que has realizado</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="fh5co-team text-center animate-box">
+							<figure>
+								<img src="images/paris1.jpg" style="width: 221px; height: 159px" />
+							</figure>
+                            <h3>Tour por la Ciudad del Amor - Paris</h3>
+
+
+							<blockquote>
+						    <p><br> </p>
+								<p>
+                                    <textarea id="" class="form-control" cols="30" name="" placeholder="Deja tú comentario..." rows="7"></textarea></p>							
+
+							</blockquote>
+							
+
+						
+
+		
+
+
+		<!-- END fh5co-contact -->
+	<!-- END fh5co-page -->
+
+	</div>
+	<!-- END fh5co-wrapper -->
+
+	<!-- jQuery -->
+
+
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/sticky.js"></script>
+
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Superfish -->
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+
+
+    </div>
+    </div>
+        </div>
+        </div>
+</asp:Content>
