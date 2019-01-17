@@ -1,0 +1,71 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaPrincipal.master" AutoEventWireup="true" CodeFile="PublicarTour.aspx.cs" Inherits="PublicarTour" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+    <form id="form1" runat="server">
+    <div class = "container">
+        <div class = "row">
+            <div class ="col-md-4 col-md-offset-4" id="fupload" style="left: 14px; top: 27px">
+
+                <br />
+
+                Título Tour:
+                <br />
+                <asp:textbox runat="server" ID="txtTitulo" width ="181px" Height="27px"></asp:textbox>
+                <br />
+                <br />
+                Nombre guía:
+                <br />
+                <asp:textbox runat="server" ID="txtNombreGuia"></asp:textbox>
+                <br />
+                <br />
+                Descripción tour:
+                <br />
+                <asp:textbox runat="server" ID="txtDescripcionTour" Height="81px" Width="388px"></asp:textbox>
+                <br />
+                <br />
+                Punto encuentro:
+                <br />
+                <asp:textbox runat="server" ID="txtPuntoEncuentro"></asp:textbox>
+                <br />
+                <br />
+                Idioma:
+                <br />
+                <asp:dropdownlist runat="server" ID="drpIdioma" OnSelectedIndexChanged="drpIdioma_SelectedIndexChanged">
+                    <asp:ListItem>Español</asp:ListItem>
+                    <asp:ListItem>Inglés</asp:ListItem>
+                </asp:dropdownlist>
+                <br />
+                <br />
+                Horario:
+                <br />
+                <asp:textbox runat="server" ID="txtHorario"></asp:textbox>
+                <br />
+                <br />
+                Imagen agregada Tour:
+                <br />
+                <asp:image runat="server" ImageUrl ="https://static.diariosur.es/www/multimedia/201712/18/media/cortadas/fondo-windows-kThF-U50399418521qcC-624x385@Diario%20Sur.jpg" Width ="200" ID="imgPreview"></asp:image>
+                <br />
+                Archivo:
+                <asp:fileupload runat="server" ID="fuploadImagen" accept =".jpg" CssClass ="form-control"></asp:fileupload>
+                <br />
+                <asp:button runat="server" text="Aceptar" ID="btnAceptar" OnClick="Unnamed9_Click" />
+                <br />
+                <br />
+                <br />
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Publicar Tour" />
+                <br />
+                <br />
+                <br />
+
+
+            </div>
+           
+        </div>
+    </div>
+        
+        </form>
+
+
+</asp:Content>
+
