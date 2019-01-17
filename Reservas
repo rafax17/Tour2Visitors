@@ -1,0 +1,59 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaPrincipal.master" AutoEventWireup="true" CodeFile="Reservas.aspx.cs" Inherits="Reservas" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+    <form id="form1" runat="server">
+    <div class="container">
+        <div class="row">
+            <div class ="col-md-4 col-md-offset-4" id="fupload">
+                Rellene los siguientes campos para reservar este tour:
+                <br />
+                <br />
+                Nombre:
+                &nbsp;<asp:textbox runat="server" ID="txtNombre"></asp:textbox>
+                <br />
+                <br />
+                Apellidos:&nbsp;<asp:textbox runat="server" ID="txtApellidos"></asp:textbox>
+                <br />
+                <br />
+                DNI:
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:textbox runat="server" ID="txtDNI"></asp:textbox>
+                <br />
+                <br />
+                Correo:&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:textbox runat="server" ID="txtCorreo" TextMode="Email"></asp:textbox>
+                <br />
+                <br />
+                Teléfono:&nbsp;
+                <asp:textbox runat="server" ID="txtTelefono"></asp:textbox>
+                <br />
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:button runat="server" text="Reservar" OnClick="Unnamed2_Click" />
+                <br />
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label1" runat="server" Font-Size="Large"></asp:Label>
+                <br />
+                <br />
+                <br />
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+    </form>
+
+
+
+</asp:Content>
+
