@@ -1,0 +1,100 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaPrincipal.master" AutoEventWireup="true" CodeFile="PublicarTourRegistrarse.aspx.cs" Inherits="PublicarTourRegistrarse" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+    <form id="form1" runat="server" onsubmit = "return validar(this)">
+        &nbsp;<script language="javascript" type="text/javascript"> 
+            function validar(frm) {
+                if (frm.txt.value.length > 20) {
+                    alert('El nombre debe ser menor o igual a 20 caracteres.'); 
+                    frm.txt.focus(); 
+                    return false;
+  } 
+} 
+</script><table style="width: 100%">
+            <tr>
+                <td style="width: 170px">&nbsp;</td>
+                <td style="width: 205px">Registrarse</td>
+            </tr>
+            <tr>
+                <td style="width: 170px">Nombre</td>
+                <td style="width: 205px">
+                    <asp:TextBox ID="TxtNombre" runat="server" Height="16px" Width="118px"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TxtNombre" Display="Dynamic" ErrorMessage="<br />Debe introducir un nombre menor o igual a 20 caracteres." ValidationExpression="^[\s\S]{0,20}$" ForeColor="Red"></asp:RegularExpressionValidator>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 170px">Apellidos</td>
+                <td style="width: 205px">
+                    <asp:TextBox ID="TxtApellidos" runat="server"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" Display="Dynamic" ErrorMessage="&lt;br /&gt;Debe introducir unos apellidos de longitud menor o igual a 60 caracteres." ControlToValidate="TxtApellidos" ValidationExpression="^[\s\S]{0,60}$" ForeColor="Red"></asp:RegularExpressionValidator>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 170px">Contraseña</td>
+                <td style="width: 205px">
+                    <asp:TextBox ID="TxtContraseña" runat="server" TextMode="Password"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="TxtContraseña" Display="Dynamic" ErrorMessage="<br />Debe introducir una contraseña que contenga al menos una letra mayúscula, una letra minúscula, un dígito y que sea mayor de 8 caraceteres" ValidationExpression="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" ForeColor="Red"></asp:RegularExpressionValidator>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 170px">Usuario</td>
+                <td style="width: 205px">
+                    <asp:TextBox ID="TxtUsuario" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 170px">Teléfono</td>
+                <td style="width: 205px">
+                    <asp:TextBox ID="TxtTelefono" runat="server" TextMode="Phone" ></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 170px">Correo</td>
+                <td style="width: 205px">
+                    <asp:TextBox ID="TxtCorreo" runat="server" TextMode="Email" Width="252px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 170px">Descripcion</td>
+                <td style="width: 205px">
+                    <asp:TextBox ID="TxtDescripcion" runat="server" Height="82px" Width="373px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 170px">Tipo de usuario</td>
+                <td style="width: 205px">
+                    <asp:DropDownList ID="DropTipoUsuario1" runat="server" OnSelectedIndexChanged="DropTipoUsuario1_SelectedIndexChanged">
+                        <asp:ListItem>Guía</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 170px">&nbsp;</td>
+                <td style="width: 205px">
+                    <br />
+                    <div class="g-recaptcha" data-sitekey="6LdjAncUAAAAALqfp-rYqtTYGr26TXJV5_Ofkcg8"></div>
+                        <br />
+                    <br />
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 170px">&nbsp;</td>
+                <td style="width: 205px">
+                    <asp:Label ID="lblestado" runat="server"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 170px">&nbsp;</td>
+                <td style="width: 205px">
+                    <asp:Button ID="BtnCrearCuenta" runat="server" Text="Crear cuenta" BackColor="Blue" ForeColor="White" OnClick="BtnCrearCuenta_Click" />
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/pageLogin.aspx">Volver</asp:HyperLink>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+</asp:Content>
+
