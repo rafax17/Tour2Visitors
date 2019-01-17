@@ -1,0 +1,59 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaPrincipal.master" AutoEventWireup="true" CodeFile="Tours.aspx.cs" Inherits="Tours" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+    <form id="form1" runat="server" style="font-family: Rockwell; font-size: large">
+        <br />
+         &nbsp; <asp:Label ID="Label1" runat="server" Font-Size="XX-Large"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <h3> &nbsp;&nbsp;&nbsp;&nbsp;Tu guía: <asp:label runat="server" ID="Label2"></asp:label> </h3>
+        <br />
+        <h3> <img src="images/01a98b056ed72c91be89177576dbc999.png" / height="30px" width="30px"><asp:label runat="server" ID="Label3"></asp:label></h3>
+        <br />
+        <h3> &nbsp;<img src="images/1162944%20(1).png" / height="30px" width="30px"> Descripción del tour <br /><br />  &nbsp;<asp:label runat="server" Font-Size="Medium" ID="Label4" Font="Arial"></asp:label>
+        </h3>
+        <br />
+        <h3> &nbsp; Punto de encuento: <br /> 
+            <br /><asp:HyperLink ID="HyperLink1" runat="server" Font-Size ="Medium" NavigateUrl="https://www.google.es/maps/place/Calle+Libreros,+28801+Alcal%C3%A1+de+Henares,+Madrid/@40.4842587,-3.3650696,17z/data=!3m1!4b1!4m5!3m4!1s0xd424914b4de521b:0xf655b5a92a41d71f!8m2!3d40.4842546!4d-3.3628809">Abrir en Google Maps</asp:HyperLink> 
+            <br />
+        <asp:image runat="server" Height="300px" Width="584px" style="background-image: url(images/Captura.PNG);"></asp:image></h3>
+        <br />
+        <h3>
+            <img src="images/language.png" /height="30px" width="30px"> Disponible en: <asp:label runat="server" ID="Label5"></asp:label></h3>
+        <br />
+        <h3>
+            <img src="images/descarga.png" /height="30px" width="30px">&nbsp;Horario: <asp:label runat="server" ID="Label6"></asp:label></h3>
+        <br />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Ver Imágenes" />
+        <br />
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns =false>
+        <Columns>
+            <asp:TemplateField HeaderText ="galería">
+
+                <ItemTemplate>
+
+                  <asp:Image runat="server" Width ="300px" Height ="250px" ImageUrl = '<%#"data:Image/png;base64,"+ Convert.ToBase64String((byte []) Eval("imagen")) %>'  />
+
+                  </asp:Image>
+
+
+                </ItemTemplate>
+
+
+
+            </asp:TemplateField>
+        </Columns>
+
+        </asp:GridView>
+        <br />
+        <br />
+        &nbsp;&nbsp;&nbsp; <asp:Button ID="Button2" runat="server" Text="Realiza tu reserva" Height="58px" OnClick="Button2_Click" Width="257px" />
+        <br />
+        <br />
+
+    </form>
+
+</asp:Content>
+
