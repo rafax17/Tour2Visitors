@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
+using System.Net;
+using System.Configuration;
+
+public partial class Tours : System.Web.UI.Page
+{
+    SqlConnection con = new SqlConnection();
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if(Request.Params["parametro"] != null)
+        {
+            Label1.Text = Request.Params["parametro"].ToString();
+            Label2.Text = Request.Params["parametro2"].ToString();
+            Label3.Text = Request.Params["parametro4"].ToString();
+            Label4.Text = Request.Params["parametro3"].ToString();
+            Label5.Text = Request.Params["parametro5"].ToString();
+            Label6.Text = Request.Params["parametro6"].ToString();
+            con.ConnectionString = "Data Source=LAPTOP-OGDFKH4G;Initial Catalog=tour2visitors;Integrated Security=True";
+            con.Open();
+        }
+    }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        
+        SqlCommand cmd = new SqlCommand("select * from Tours where titulo ='Viaje por Alcala'", con);
+        SqlDataReader dr =  cmd.ExecuteReader();
+        GridView1.DataSource = dr;
+        GridView1.DataBind();
+    }
+
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/Reservas.aspx");
+    }
+}
