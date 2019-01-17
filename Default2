@@ -1,0 +1,32 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaPrincipal.master" AutoEventWireup="true" CodeFile="Default2.aspx.cs" Inherits="Default2" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+    
+    <form id="form1" runat="server" style="height: 345px">
+
+    <h1 style="height: 493px">
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        ¿AÚN NO TIENES CUENTA DE GUÍA? REGÍSTRATE PARA ENSEÑAR TU LUGAR A TODO EL MUNDO O SI YA TIENES CUENTA 
+        PRUEBA A CONECTARTE Y HACER&nbsp;QUE LOS DEMÁS DISFRUTEN DE TUS TOURS!<br />
+        <br />
+
+        <table class="nav-justified">
+            <tr>
+                
+                <td>
+                    <center>
+                    <asp:Button ID="Button1" runat="server" Height="53px" Text="Registrarse" OnClick="Button1_Click" />
+                    <asp:Button ID="Button2" runat="server" Height="53px" Text="Iniciar Sesión" OnClick="Button2_Click1" />
+                    </center>
+                </td>
+            </tr>
+        </table>
+
+     </h1>
+        
+    </form>
+</asp:Content>
+
